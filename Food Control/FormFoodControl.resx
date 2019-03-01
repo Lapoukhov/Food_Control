@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="timerTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="labelHead_Text3.Text" xml:space="preserve">
+    <value>Энергия потребляемая в состоянии спокойствия называется обменом веществ.  Ваш обмен в основном зависит от ве
+са, пола, роста, возраста. Не существует универсального способа потерять килограммы, каждый должен рассматри-
+ваться индивидуально. Если вы хотите потерять вес около 1кг в неделю, то расход вашей энергии примерно должен на
+2500 - 3000 кДж быть выше чем энергия, получаемая из пищи.</value>
+  </data>
+  <data name="labelHead_Text1.Text" xml:space="preserve">
+    <value>Наверное, каждый из нас встречался с гарантированными диетами, чтобы уменьшить или удержать свой вес. Некото-
+рые из них могут помочь, но большинство просто выдумка, которая прикрывает пищевые добавки в основе этих диет.
+Верить диетам или нет  -  дело ваше, но правильно сбалансированные рацион непременно поможет вам получить же-
+ланный вес, благодаря четким расчетам потребленных и сожженных калорий при различных нагрузках. До сих пор ни-
+кто не придумал такого способа поддерживания веса, чтобы обойти один из самых фундаментальных законов физики
+ - закон сохранения энергии. Если хотите сохранить ваш вес, то потраченную в течении дня энергию требуется компен-
+сировать энергетически ценными продутками.
+</value>
+  </data>
+  <data name="labelReference_Text.Text" xml:space="preserve">
+    <value>1. После авторизации открывается главное окно программы. Слева представлено меню программы. В верхней рас-
+положено поле, на котором отображаются суточные нормы показателей.  Первоначально активна вкладка "Главная".
+2. Для начала работы с приложением Food Control авторизованному пользователю следует перейти на вкладку "Мой
+профиль" .  Далее заполнить личные данные, указать цель использования, физическую активность и нажать на кнопку
+"Сохранить изменения". Программа автоматически рассчитает суточную норму калорий и нормальную массу тела,
+опираясь на введенные данные. Показатели можно изменять в любое время, программное средство своевременно
+отреагирует на изменения. При следующей авторизации пользователю не придется повторно заполнять свои данные,
+программа хранит его последние показатели и загружает их. Выбранная цель влияет на значения показателей суточ-
+ной нормы калорий, белков, жиров и углеводов. При установке цели на "сбросить вес до нормы" или "набрать вес до
+нормы" суточные нормы уменьшаются или увеличиваются соответсвенно. Пользование с целью похудения будет рабо-
+тать до того момента, пока показатель веса не приблизится к нормальной массе тела,  которая рассчитывается ис-
+ходя из возраста, веса, физич. активности. Программа не позволит использовать режим похудения до "ненормально-
+го" веса. Food Control заботится о вашем здоровье !
+3. На вкладке "Дневник" пользователь указывает, что он употребил и в каком количестве.  Приложение автоматически
+вычисляет калорийность употребленного продукта после нажатия на кнопку "Добавить".  Пользователь сможет отме-
+нить последний добавленный продукт выбрав соответствующую команду. Справа расположено поле, где указывает-
+ся объем употребленной воды. Для этого необходимо выбрать в чем измеряется объем (в штуках или в миллилитрах).
+4. Просмотр статистики осуществляется по нажатию в меню на кнопку "Статистика". На экране появится информа-
+ция об употребленном количестве калорий, о том, сколько еще необходимо получить калорий, чтобы приблизиться к
+личной суточной норме. Также приложение отображает употребленную воду.
+5. Для смены пользователя необходимо выбрать в меню "Выход". Откроется окно для авторизации или регистрации.</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

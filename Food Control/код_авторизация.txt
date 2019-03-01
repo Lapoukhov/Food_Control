@@ -1,0 +1,133 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+
+namespace Food_Control
+{
+    public partial class formAuthorization : Form
+    {
+        public formAuthorization()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonAuthorization_Click(object sender, EventArgs e)
+        {
+            //вход в систему
+            string login = textboxLogin.Text, password = textboxPassword.Text;
+            int NumLogin = 0;
+            bool checkLogin = false;
+            //поиск логина
+            FileStream fileLogin = new FileStream("LOGIN.txt", FileMode.OpenOrCreate);
+            StreamReader reader = new StreamReader(fileLogin);
+            while (!reader.EndOfStream)
+                if (reader.ReadLine() == login)
+                {
+                    checkLogin = true;
+                    break;
+                }
+                else NumLogin++;
+            reader.Close();
+            if (checkLogin)   //если нашел логин, проверяем пароль
+            {
+                string secondLine = File.ReadLines("PASSWORD.txt").Skip(NumLogin).First();
+                if (secondLine == password)
+                {
+                    DialogResult = MessageBox.Show("Вы вошли в систему!", "Приветствуем", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Hide();
+                    FormFoodControl FoodControl = new FormFoodControl();
+                    FoodControl.labelProfil_Name.Text = this.textboxLogin.Text;
+                    FoodControl.ShowDialog();
+                    Close();
+                }
+                else
+                {
+                    DialogResult res = MessageBox.Show("Неправильный логин или пароль!", "ВНИМАНИЕ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textboxLogin.Text = "";
+                    textboxPassword.Text = "";
+                };
+            }
+            else
+                {
+                    DialogResult = MessageBox.Show("Пользователь с таким логином не зарегистрирован!","ВНИМАНИЕ",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    textboxLogin.Text = "";
+                    textboxPassword.Text = "";
+                };
+        }
+
+        private void buttonRegistration_Click(object sender, EventArgs e)
+        {
+            //переход на панель регистрации
+            panelRegistration.Visible = true;
+            textboxLoginReg.Text = "";
+            textboxPasswordReg.Text = "";
+            textboxPassword2.Text = "";
+        }
+
+        private void buttonRegistrationOK_Click(object sender, EventArgs e)
+        {
+            //зарегстрировать пользователя
+            string loginReg = textboxLoginReg.Text, passwordReg = textboxPasswordReg.Text, password2 = textboxPassword2.Text;
+            bool checkLoginReg = false;
+            //проверка логина
+            FileStream file3 = new FileStream("LOGIN.txt", FileMode.OpenOrCreate);
+            StreamReader reader3 = new StreamReader(file3);
+            while (!reader3.EndOfStream)
+                if (reader3.ReadLine() == loginReg)
+                {
+                    checkLoginReg = true;
+                    break;
+                }
+            reader3.Close();
+            //проверка повторного пароля
+            if (passwordReg == password2)
+            {
+                if (checkLoginReg)  //если такой логин уже есть в файле
+                {
+                    DialogResult = MessageBox.Show("Такой логин уже зарегистрирован!", "ВНИМАНИЕ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textboxLoginReg.Text = "";
+                    textboxPasswordReg.Text = "";
+                    textboxPassword2.Text = "";
+                }
+                else  //запись нового логина и пароля
+                {
+                    System.IO.StreamWriter writer1 = new System.IO.StreamWriter("LOGIN.txt", true);
+                    writer1.WriteLine(loginReg);
+                    writer1.Close();
+
+                    System.IO.StreamWriter writer2 = new System.IO.StreamWriter("PASSWORD.txt", true);
+                    writer2.WriteLine(passwordReg);
+                    writer2.Close();
+                    DialogResult = MessageBox.Show("Пользователь успешно зарегистрирован!", "Приветствуем", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Hide();
+                    FormFoodControl FoodControl = new FormFoodControl();
+                    FoodControl.labelProfil_Name.Text = this.textboxLoginReg.Text;
+                    FoodControl.ShowDialog();
+                    Close();
+                }
+            }
+            else
+            {
+                DialogResult = MessageBox.Show("Пароли не совпадают!", "ВНИМАНИЕ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textboxLoginReg.Text = "";
+                textboxPasswordReg.Text = "";
+                textboxPassword2.Text = "";
+            }
+        }
+
+        private void buttonToAutorization_Click(object sender, EventArgs e)
+        {
+            //вернуться на поле входа в систему
+            panelRegistration.Visible = false;
+            panelAutarization.Visible = true;
+            textboxLogin.Text = "";
+            textboxPassword.Text = "";
+        }
+    }
+}

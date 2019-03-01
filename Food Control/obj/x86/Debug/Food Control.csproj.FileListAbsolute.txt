@@ -1,0 +1,9 @@
+D:\3 семестр\КУРСОВАЯ\Food Control\bin\Debug\Food Control.exe
+D:\3 семестр\КУРСОВАЯ\Food Control\bin\Debug\Food Control.pdb
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food_Control.formAuthorization.resources
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food_Control.Properties.Resources.resources
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food Control.csproj.GenerateResource.Cache
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food Control.exe
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food Control.pdb
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food_Control.FormFoodControl.resources
+D:\3 семестр\КУРСОВАЯ\Food Control\obj\x86\Debug\Food Control.csprojResolveAssemblyReference.cache

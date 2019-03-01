@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CA4A857-AD4C-4E90-ACED-4CE565125101}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Food_Control</RootNamespace>
+    <AssemblyName>Food Control</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon-food-and-beverage %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAutarization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAutarization.Designer.cs">
+      <DependentUpon>formAutarization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFoodControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFoodControl.Designer.cs">
+      <DependentUpon>FormFoodControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAutarization.resx">
+      <DependentUpon>formAutarization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFoodControl.resx">
+      <DependentUpon>FormFoodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-food-and-beverage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96px-Gtk-home.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_homex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13767.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1211781955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dac126b4664f0f4e0869d3c5e2e49548.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-156836_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\La_Villa_Narnia_Knysna.11344034_std.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1046641.kzf87yno68.500x500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486504325-business-graph-pie-chart-revenue-business-growth-graph-growth-chart_81320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clip-art-pie-chart-clipartsco-180818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1046641.kzf87yno68.500x500 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-information-green-sign-image-download-112826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Знак_вопроса_67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelkavpravo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F1_Emergency-Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e_013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e_013 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-156836_1280 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus_PNG59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4377d66029da28157b70d76812f8e02d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1237396_935xp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408885.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-tape-measure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nix_apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rezhim.app_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organic-food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon-food-and-beverage %281%29.ico" />
+    <None Include="Resources\food-button-restaurant-fork-image-download-1052061.png" />
+    <None Include="Resources\favicon1.png" />
+    <None Include="Resources\300-1.png" />
+    <None Include="Resources\restaurante-simbolo-png-5.png" />
+    <None Include="Resources\eCnVDmdybj41.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\LOGO1.png" />
+    <None Include="Resources\piodBg6dT1.png" />
+    <None Include="Resources\LaunchPad-Rocket-icon1.png" />
+    <None Include="Resources\dacadoo_Icon_Size1500px2.png" />
+    <None Include="Resources\4TbLjdeEc1.png" />
+    <None Include="Resources\cf81f510b283cec55863b0071e17abee3.jpg" />
+    <None Include="Resources\cf81f510b283cec55863b0071e17abee2.jpg" />
+    <None Include="Resources\1359215162_glass-of-water11.jpg" />
+    <None Include="Resources\295bce2659c07b0c500ff37ca849f895.png" />
+    <None Include="Resources\25-23.jpg" />
+    <None Include="Resources\nov4.jpg" />
+    <None Include="Resources\cf81f510b283cec55863b0071e17abee1.jpg" />
+    <None Include="Resources\1359215162_glass-of-water1.jpg" />
+    <None Include="Resources\58.jpg" />
+    <None Include="Resources\cf81f510b283cec55863b0071e17abee.jpg" />
+    <None Include="Resources\C2nkm7GL-z82.jpg" />
+    <None Include="Resources\25-22.jpg" />
+    <None Include="Resources\iStock_000019390234Medium.jpg" />
+    <None Include="Resources\C2nkm7GL-z81.jpg" />
+    <None Include="Resources\82606.jpg" />
+    <None Include="Resources\25-21.jpg" />
+    <None Include="Resources\nutrition-diagonal-banner-cropped.jpg" />
+    <None Include="Resources\pyat-priemov-pishhi %281%29.jpg" />
+    <None Include="Resources\Drobnoe-pitanie-37-768x770.jpg" />
+    <None Include="Resources\dacadoo_Icon_Size1500px1.png" />
+    <None Include="Resources\eCnVDmdybj4.jpg" />
+    <None Include="Resources\C2nkm7GL-z8.jpg" />
+    <None Include="Resources\Drobnoe-pitanie-1024x6822.jpeg" />
+    <None Include="Resources\171.4-Programma-pitaniya-DASH.jpg" />
+    <None Include="Resources\71.jpg" />
+    <None Include="Resources\25-2.jpg" />
+    <None Include="Resources\1-12-1024x7681.jpg" />
+    <None Include="Resources\14088851.png" />
+    <None Include="Resources\nix_apple1.png" />
+    <None Include="Resources\kisspng-computer-icons-clip-art-5b21df8bb7e445.1689019215289465717532.jpg" />
+    <None Include="Resources\1237396_935xp1.jpg" />
+    <None Include="Resources\dac126b4664f0f4e0869d3c5e2e495481.gif" />
+    <None Include="Resources\food-button-restaurant-fork-image-download-105206.png" />
+    <None Include="Resources\favicon.png" />
+    <None Include="Resources\LaunchPad-Rocket-icon.png" />
+    <None Include="Resources\4TbLjdeEc.png" />
+    <None Include="Resources\Map-circle-lime.svg2.png" />
+    <None Include="Resources\Map-circle-lime.svg1.png" />
+    <None Include="Resources\grass-green-produce-circle-font-ball-sphere-oval-about-easter-egg-product-design-1412441.jpg" />
+    <None Include="Resources\vector-painted-green-circle-5a29a44b973348.4906824015126784756193.jpg" />
+    <None Include="Resources\Map-circle-lime.svg.png" />
+    <None Include="Resources\jTxL68Bqc.png" />
+    <None Include="Resources\circle-frame-5.jpg" />
+    <None Include="Resources\Floral-PNG-File2.png" />
+    <None Include="Resources\Floral-PNG-File1.png" />
+    <None Include="Resources\Floral-PNG-File.png" />
+    <None Include="Resources\green-one-fancy-number-line-transparent-102237.png" />
+    <None Include="Resources\0_493b7_866e4900_XXL.png" />
+    <None Include="Resources\vin144.png" />
+    <None Include="Resources\piodBg6dT.png" />
+    <None Include="Resources\oblozhka_zdorov_e_prezhde_vsego.jpg" />
+    <None Include="Resources\LOGO.png" />
+    <None Include="Resources\health235.jpg" />
+    <None Include="Resources\dacadoo_Icon_Size1500px.png" />
+    <None Include="Resources\small-user-icon-8.jpg" />
+    <None Include="Resources\avatar-1.jpg" />
+    <None Include="Resources\1024x1024bb.png" />
+    <None Include="Resources\36cae42647712d377a8b6bf8f7489ee2.png" />
+    <None Include="Resources\Drobnoe-pitanie-1024x6821.jpeg" />
+    <None Include="Resources\xronodieta-menu-receptu.jpg" />
+    <None Include="Resources\ovoshchi-zelen-assorti-1.jpg" />
+    <None Include="Resources\Drobnoe-pitanie-1024x682.jpeg" />
+    <None Include="Resources\1-12-1024x768.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

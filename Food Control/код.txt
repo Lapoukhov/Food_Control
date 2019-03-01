@@ -1,0 +1,148 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Food_Control
+{
+    public partial class FormFoodControl : Form
+    {
+        public struct Profil
+        {
+            public string Name;
+            public string Years;
+            public string Ves;
+            public string Rost;
+            public int Target;
+        }
+
+        public FormFoodControl()
+        {
+            InitializeComponent();
+            timerTime.Start();
+            panelHead.Visible = true;
+            panelProfil.Visible = false;           
+        }
+
+
+        private void buttonMenuExit_Click(object sender, EventArgs e)
+        {
+            Hide();
+            formAuthorization Authorization = new formAuthorization();
+            Authorization.ShowDialog();
+            Close();
+        }
+
+        private void buttonMenuHead_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuHead.Height;
+            panelRightButton.Top = buttonMenuProfil.Top-3;
+            panelHead.Visible = true;
+            panelProfil.Visible = false;
+        }
+
+        private void buttonMenuProfil_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuProfil.Height;
+            panelRightButton.Top = buttonMenuBook.Top-3;
+            panelHead.Visible = false;
+            panelProfil.Visible = true;
+        }
+
+        private void buttonMenuBook_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuBook.Height;
+            panelRightButton.Top = buttonMenuStatistic.Top - 3;
+            panelHead.Visible = false;
+            panelProfil.Visible = false;
+        }
+
+        private void buttonMenuStatistic_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuStatistic.Height;
+            panelRightButton.Top = buttonMenuReference.Top-3;
+            panelHead.Visible = false;
+            panelProfil.Visible = false;
+        }
+
+        private void buttonMenuReference_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Top = buttonMenuExit.Top-3;
+            panelRightButton.Height = buttonMenuReference.Height;
+            panelHead.Visible = false;
+            panelProfil.Visible = false;
+        }
+
+        private void pictureBoxMinimum_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void timerTime_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            labelTime.Text = dt.ToString("Время: "+"HH:mm:ss");
+            labelDate.Text = dt.ToString("Дата: " + "dd:MM:yy");
+        }
+
+        private void labelNorma_Calorii_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuProfil.Height;
+            panelRightButton.Top = buttonMenuBook.Top - 3;
+            panelProfil.Visible = true;
+        }
+
+        private void labelNorma_Uglevody_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuProfil.Height;
+            panelRightButton.Top = buttonMenuBook.Top - 3;
+            panelProfil.Visible = true;
+        }
+
+        private void labelNorma_Belki_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuProfil.Height;
+            panelRightButton.Top = buttonMenuBook.Top - 3;
+            panelProfil.Visible = true;
+        }
+
+        private void labelNorma_Zhiry_Click(object sender, EventArgs e)
+        {
+            panelRightButton.Height = buttonMenuProfil.Height;
+            panelRightButton.Top = buttonMenuBook.Top - 3;
+            panelProfil.Visible = true;
+        }
+
+        private void buttonProfil_SaveUsersDate_Click(object sender, EventArgs e)
+        {
+            //личные данные пользователя
+            Profil UserData = new Profil();
+            UserData.Name = labelProfil_Name.Text;
+            UserData.Years = textBoxProfil_Years.Text;
+            UserData.Ves = textBoxProfil_Ves.Text;
+            UserData.Rost = textBoxProfil_Rost.Text;
+            if (radioButton3.Checked)
+            {
+                UserData.Target = 3;
+            }
+            else
+            {
+                if (radioButton2.Checked)
+                {
+                    UserData.Target = 2;
+                }
+                else
+                    UserData.Target = 1;
+            }
+        }
+    }
+}
