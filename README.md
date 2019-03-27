@@ -1,5 +1,6 @@
 # Food_Control
-course project
+
+Курсовой проект
 
 ![1](https://user-images.githubusercontent.com/37573044/55090950-05ef7480-50c1-11e9-9571-6379c428d70b.png)
 
